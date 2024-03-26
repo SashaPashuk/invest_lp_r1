@@ -1,0 +1,80 @@
+/* Основные стили формы */
+form {
+  max-width: 320px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Чтобы размеры включали padding */
+}
+
+label {
+  font-size: 13px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.iti {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.suggestion {
+  color: #007bff; /* Синий цвет, аналогичный стандартным гиперссылкам */
+  cursor: n-resize; /* Курсор в виде руки, указывающий на интерактивность */
+  text-decoration: underline; /* Подчеркивание для подчеркивания гиперссылки */
+  padding: 1px; /* Небольшой отступ вокруг текста */
+  border-radius: 5px; /* Скругленные углы для эстетической привлекательности */
+}
+
+.suggestion:hover {
+  background-color: #e9ecef; /* Светло-серый фон при наведении */
+  text-decoration: none; /* Убрать подчеркивание при наведении */
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Стили для валидации */
+.valid {
+  background-color: #e0f8d8; /* Светло-зеленый фон для валидных полей */
+}
+
+.invalid {
+  background-color: #ffdddd; /* Светло-красный фон для невалидных полей */
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+/* Стиль для галочки валидации
+.valid + .error-msg::after {
+    content: url('check.gif');
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+ */
